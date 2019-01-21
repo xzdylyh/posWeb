@@ -1,8 +1,8 @@
 #coding=utf-8
-from pos.pages.numbercardListPage import NumberCardListPage
+from pages.numbercardListPage import NumberCardListPage
 import unittest,ddt,os
-from pos.lib.scripts import getYamlfield,getRunFlag,select_Browser_WebDriver,replayCaseFail
-from pos.lib import gl,HTMLTESTRunnerCN
+from lib.scripts import getYamlfield,getRunFlag,select_Browser_WebDriver,replayCaseFail
+from lib import gl,HTMLTESTRunnerCN
 
 
 

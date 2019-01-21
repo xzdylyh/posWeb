@@ -1,8 +1,8 @@
 #coding=utf-8
-from pos.pages.chargeListPage import ChargeListPage
+from pages.chargeListPage import ChargeListPage
 import unittest,ddt,os
-from pos.lib.scripts import getRunFlag,select_Browser_WebDriver,replayCaseFail
-from pos.lib import gl,HTMLTESTRunnerCN
+from lib.scripts import getRunFlag,select_Browser_WebDriver,replayCaseFail
+from lib import gl,HTMLTESTRunnerCN
 
 
 chargeData = [

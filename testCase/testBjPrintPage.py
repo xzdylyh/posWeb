@@ -1,8 +1,8 @@
 #coding=utf-8
-from pos.pages.bjPrintPage import BjPrintPage
+from pages.bjPrintPage import BjPrintPage
 import unittest,ddt,os
-from pos.lib.scripts import getRunFlag,select_Browser_WebDriver,replayCaseFail
-from pos.lib import gl,HTMLTESTRunnerCN
+from lib.scripts import getRunFlag,select_Browser_WebDriver,replayCaseFail
+from lib import gl,HTMLTESTRunnerCN
 import time
 
 printData = [

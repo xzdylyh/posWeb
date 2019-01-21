@@ -8,8 +8,8 @@ from selenium.webdriver.support import expected_conditions as EX
 from selenium.common.exceptions import NoSuchElementException,\
     TimeoutException,ElementNotVisibleException,UnexpectedAlertPresentException
 
-from pos.lib.scripts import getYamlfield,Replay,hightlightConfig
-from pos.lib import gl
+from lib.scripts import getYamlfield,Replay,hightlightConfig
+from lib import gl
 
 
 '''

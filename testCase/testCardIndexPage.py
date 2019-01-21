@@ -2,12 +2,12 @@
 import unittest,ddt,os,time
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
-from pos.pages.cardIndexPage import CardIndexPage
+from pages.cardIndexPage import CardIndexPage
 
-from pos.lib.scripts import Replay,getRunFlag,\
+from lib.scripts import Replay,getRunFlag,\
     getYamlfield,rmDirsAndFiles,select_Browser_WebDriver,replayCaseFail
-from pos.lib.excel import Excel
-from pos.lib import gl,HTMLTESTRunnerCN
+from lib.excel import Excel
+from lib import gl,HTMLTESTRunnerCN
 
 cardShopData = [
     {

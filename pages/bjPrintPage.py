@@ -1,7 +1,7 @@
 #coding=utf-8
-from pos.base import basepage
+from base import basepage
 from selenium.webdriver.common.by import By
-from pos.lib import scripts,gl
+from lib import scripts,gl
 import time,os
 
 class BjPrintPage(basepage.BasePage):

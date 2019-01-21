@@ -1,9 +1,9 @@
 # coding=utf-8
-from pos.pages.creditListPage import CreditListPage
+from pages.creditListPage import CreditListPage
 import unittest, ddt, os
-from pos.lib.excel import Excel
-from pos.lib.scripts import getRunFlag,getYamlfield,select_Browser_WebDriver,replayCaseFail
-from pos.lib import gl, HTMLTESTRunnerCN
+from lib.excel import Excel
+from lib.scripts import getRunFlag,getYamlfield,select_Browser_WebDriver,replayCaseFail
+from lib import gl, HTMLTESTRunnerCN
 import time, json
 
 creditData = [

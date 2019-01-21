@@ -1,10 +1,10 @@
 #coding=utf-8
 import time,json
-from pos.pages.consumeListPage import ConsumeListPage
+from pages.consumeListPage import ConsumeListPage
 import unittest,ddt,os
-from pos.lib.excel import Excel
-from pos.lib.scripts import getRunFlag,select_Browser_WebDriver,replayCaseFail
-from pos.lib import gl,HTMLTESTRunnerCN
+from lib.excel import Excel
+from lib.scripts import getRunFlag,select_Browser_WebDriver,replayCaseFail
+from lib import gl,HTMLTESTRunnerCN
 
 
 consumeData = [
