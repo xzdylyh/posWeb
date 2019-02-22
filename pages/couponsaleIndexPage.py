@@ -18,7 +18,7 @@ class CouponsaleIndexPage(basepage.BasePage):
 
     """商品售卖页面"""
     # 商口复选择框
-    shop_select_loc = (By.CLASS_NAME,'checkbox-inline')
+    shop_select_loc = (By.XPATH,'//input[@name="rules"]/..')
     # 数量输入框
     shop_Num_loc = (By.NAME,'num')
     # 确定按钮
@@ -42,7 +42,13 @@ class CouponsaleIndexPage(basepage.BasePage):
     def clickiterSelect(self, index):
         """单击 商品复选框"""
         print('选择商品:{}'.format(index))
-        self.click_btns_index(index, *(self.shop_select_loc))
+        if isinstance(index,list):
+            for i in index:
+                self.click_btns_index(i, *(self.shop_select_loc))
+        else:
+            self.click_btns_index(index, *(self.shop_select_loc))
+
+
 
     def inputShopNum(self,text):
         """输入 商品数量"""

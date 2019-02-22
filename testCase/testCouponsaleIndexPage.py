@@ -6,11 +6,10 @@ from lib import gl,HTMLTESTRunnerCN
 
 shopData = [
     {
-        "phoneOrCard":"1282511874548311",
-        "iterInput":[1,1],
+        "phoneOrCard":"1668830683410756",
+        "iterSelect":[0,1],  #勾选商品售卖商品,列表中为商品元素id. 0第一个;1第二个
         "desc":u"商品售卖:券包+次卡+直接购买",
         "title":u"商品售卖 - 微生活POS系统",
-        "chk_index":0,
         "password":'000000'
     }
 ]
@@ -45,7 +44,7 @@ class TestCouponsaleIndexPage(unittest.TestCase):
 
         """商品售卖页"""
         #批量 勾选商品复选框
-        self.shop.clickiterSelect(data['chk_index'])
+        self.shop.clickiterSelect(data['iterSelect'])
         #单击 确定按钮，提交售卖
         self.shop.clickShopConfirmBtn
         # 交易密码

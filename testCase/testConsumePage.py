@@ -1,5 +1,6 @@
 #coding=utf-8
 from pages.consumePage import ConsumePage
+from selenium import webdriver
 import unittest,ddt,os
 from lib.excel import Excel
 from lib.scripts import (
